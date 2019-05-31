@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesignPatternObserverExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="253-vj-zFU">
+                                <rect key="frame" x="64" y="63" width="247" height="30"/>
+                                <state key="normal" title="Run"/>
+                                <connections>
+                                    <action selector="runButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JX4-qy-6h9"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ie-5n-sSp">
+                                <rect key="frame" x="64" y="63" width="247" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QwO-2U-aWG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tm2-Gk-mtz" customClass="RIGOLabel" customModule="DesignPatternObserverExample" customModuleProvider="target">
+                                <rect key="frame" x="166.5" y="193" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMA-co-cw5" customClass="RIGOView" customModule="DesignPatternObserverExample" customModuleProvider="target">
+                                <rect key="frame" x="71" y="246" width="240" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Jk7-Po-zMd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXB-vr-B1D" customClass="RIGOButton" customModule="DesignPatternObserverExample" customModuleProvider="target">
+                                <rect key="frame" x="71" y="342" width="240" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="253-vj-zFU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="1tc-fv-WGE"/>
+                            <constraint firstItem="tm2-Gk-mtz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Io-Dr-qMH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="253-vj-zFU" secondAttribute="trailing" constant="64" id="82m-AZ-c3P"/>
+                            <constraint firstItem="253-vj-zFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="C7C-oA-1bg"/>
+                            <constraint firstItem="OXB-vr-B1D" firstAttribute="trailing" secondItem="bMA-co-cw5" secondAttribute="trailing" id="D13-PW-nM3"/>
+                            <constraint firstItem="OXB-vr-B1D" firstAttribute="leading" secondItem="bMA-co-cw5" secondAttribute="leading" id="Fhq-ac-Xea"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bMA-co-cw5" secondAttribute="trailing" constant="64" id="PGA-Oc-yfJ"/>
+                            <constraint firstItem="5ie-5n-sSp" firstAttribute="bottom" secondItem="253-vj-zFU" secondAttribute="bottom" id="QR9-4H-S6Z"/>
+                            <constraint firstItem="bMA-co-cw5" firstAttribute="top" secondItem="tm2-Gk-mtz" secondAttribute="bottom" constant="32" id="RTQ-sa-jJb"/>
+                            <constraint firstItem="5ie-5n-sSp" firstAttribute="trailing" secondItem="253-vj-zFU" secondAttribute="trailing" id="YxB-BY-f1P"/>
+                            <constraint firstItem="tm2-Gk-mtz" firstAttribute="top" secondItem="253-vj-zFU" secondAttribute="bottom" constant="100" id="Zgf-pY-a2L"/>
+                            <constraint firstItem="5ie-5n-sSp" firstAttribute="leading" secondItem="253-vj-zFU" secondAttribute="leading" id="ahc-4K-BoC"/>
+                            <constraint firstItem="OXB-vr-B1D" firstAttribute="top" secondItem="bMA-co-cw5" secondAttribute="bottom" constant="32" id="t5y-3b-LBN"/>
+                            <constraint firstItem="bMA-co-cw5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="tb0-0y-mLG"/>
+                            <constraint firstItem="5ie-5n-sSp" firstAttribute="top" secondItem="253-vj-zFU" secondAttribute="top" id="zlD-6P-m72"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="observerButton" destination="OXB-vr-B1D" id="fEd-jq-cEh"/>
+                        <outlet property="observerLabel" destination="tm2-Gk-mtz" id="Hgx-cy-bm8"/>
+                        <outlet property="observerView" destination="bMA-co-cw5" id="8hi-JC-P3c"/>
+                        <outlet property="runButton" destination="253-vj-zFU" id="FNd-qG-dFX"/>
+                        <outlet property="stopButton" destination="5ie-5n-sSp" id="ptl-Nd-xKc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="143"/>
+        </scene>
+    </scenes>
+</document>
