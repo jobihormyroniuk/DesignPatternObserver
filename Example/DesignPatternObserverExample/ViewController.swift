@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
   // MARK: Data
   
-  private let randomIntegerGenerator = RandomIntegerGeneratorAnyPositiveInteger()
+  private let randomIntegerGenerator = RandomIntegerGeneratorAnyInteger()
   private let logger = Logger()
   
   // MARK: Elements
