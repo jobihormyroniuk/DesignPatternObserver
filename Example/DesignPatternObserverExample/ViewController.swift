@@ -19,9 +19,9 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var runButton: UIButton!
   @IBOutlet weak var stopButton: UIButton!
-  @IBOutlet weak var observerLabel: RIGOLabel!
-  @IBOutlet weak var observerView: RIGOView!
-  @IBOutlet weak var observerButton: RIGOButton!
+  @IBOutlet weak var observerLabel: Label!
+  @IBOutlet weak var observerView: View!
+  @IBOutlet weak var observerButton: Button!
 
   // MARK: Events
   

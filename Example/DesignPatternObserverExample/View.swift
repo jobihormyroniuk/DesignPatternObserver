@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RIGOView: UIView, RandomIntegerGeneratorObserver {
+class View: UIView, RandomIntegerGeneratorObserver {
   
   func randomIntegerGenerator(_ randomIntegerGenerator: RandomIntegerGenerator, didGenerateRandomInteger integer: Int) {
     backgroundColor = integer > 0 ? .green : .red

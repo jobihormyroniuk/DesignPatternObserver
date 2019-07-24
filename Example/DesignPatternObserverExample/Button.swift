@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RIGOButton: UIButton, RandomIntegerGeneratorObserver {
+class Button: UIButton, RandomIntegerGeneratorObserver {
   
   func randomIntegerGenerator(_ randomIntegerGenerator: RandomIntegerGenerator, didGenerateRandomInteger integer: Int) {
     isEnabled = integer % 2 == 0 ? true : false

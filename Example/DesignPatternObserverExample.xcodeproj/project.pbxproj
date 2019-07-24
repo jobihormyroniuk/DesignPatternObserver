@@ -16,9 +16,9 @@
 		C5744D7522A1821300454576 /* RandomIntegerGeneratorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7422A1821300454576 /* RandomIntegerGeneratorObserver.swift */; };
 		C5744D7722A1826100454576 /* RandomIntegerGeneratorAnyInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7622A1826100454576 /* RandomIntegerGeneratorAnyInteger.swift */; };
 		C5744D7922A1868C00454576 /* RandomIntegerGeneratorAnyPositiveInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7822A1868C00454576 /* RandomIntegerGeneratorAnyPositiveInteger.swift */; };
-		C5744D7B22A1894900454576 /* RIGOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7A22A1894900454576 /* RIGOLabel.swift */; };
-		C5744D7D22A189E600454576 /* RIGOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7C22A189E600454576 /* RIGOView.swift */; };
-		C5744D7F22A18A9E00454576 /* RIGOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7E22A18A9E00454576 /* RIGOButton.swift */; };
+		C5744D7B22A1894900454576 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7A22A1894900454576 /* Label.swift */; };
+		C5744D7D22A189E600454576 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7C22A189E600454576 /* View.swift */; };
+		C5744D7F22A18A9E00454576 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D7E22A18A9E00454576 /* Button.swift */; };
 		C5744D8122A18CEA00454576 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5744D8022A18CEA00454576 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +34,9 @@
 		C5744D7422A1821300454576 /* RandomIntegerGeneratorObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomIntegerGeneratorObserver.swift; sourceTree = "<group>"; };
 		C5744D7622A1826100454576 /* RandomIntegerGeneratorAnyInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomIntegerGeneratorAnyInteger.swift; sourceTree = "<group>"; };
 		C5744D7822A1868C00454576 /* RandomIntegerGeneratorAnyPositiveInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomIntegerGeneratorAnyPositiveInteger.swift; sourceTree = "<group>"; };
-		C5744D7A22A1894900454576 /* RIGOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGOLabel.swift; sourceTree = "<group>"; };
-		C5744D7C22A189E600454576 /* RIGOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGOView.swift; sourceTree = "<group>"; };
-		C5744D7E22A18A9E00454576 /* RIGOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGOButton.swift; sourceTree = "<group>"; };
+		C5744D7A22A1894900454576 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		C5744D7C22A189E600454576 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		C5744D7E22A18A9E00454576 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C5744D8022A18CEA00454576 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,9 +80,9 @@
 				C5744D7422A1821300454576 /* RandomIntegerGeneratorObserver.swift */,
 				C5744D7622A1826100454576 /* RandomIntegerGeneratorAnyInteger.swift */,
 				C5744D7822A1868C00454576 /* RandomIntegerGeneratorAnyPositiveInteger.swift */,
-				C5744D7A22A1894900454576 /* RIGOLabel.swift */,
-				C5744D7C22A189E600454576 /* RIGOView.swift */,
-				C5744D7E22A18A9E00454576 /* RIGOButton.swift */,
+				C5744D7A22A1894900454576 /* Label.swift */,
+				C5744D7C22A189E600454576 /* View.swift */,
+				C5744D7E22A18A9E00454576 /* Button.swift */,
 				C5744D8022A18CEA00454576 /* Logger.swift */,
 			);
 			path = DesignPatternObserverExample;
@@ -161,12 +161,12 @@
 			files = (
 				C5744D7922A1868C00454576 /* RandomIntegerGeneratorAnyPositiveInteger.swift in Sources */,
 				C5744D7722A1826100454576 /* RandomIntegerGeneratorAnyInteger.swift in Sources */,
-				C5744D7F22A18A9E00454576 /* RIGOButton.swift in Sources */,
-				C5744D7B22A1894900454576 /* RIGOLabel.swift in Sources */,
+				C5744D7F22A18A9E00454576 /* Button.swift in Sources */,
+				C5744D7B22A1894900454576 /* Label.swift in Sources */,
 				C5744D6322A17E3800454576 /* ViewController.swift in Sources */,
 				C5744D8122A18CEA00454576 /* Logger.swift in Sources */,
 				C5744D7522A1821300454576 /* RandomIntegerGeneratorObserver.swift in Sources */,
-				C5744D7D22A189E600454576 /* RIGOView.swift in Sources */,
+				C5744D7D22A189E600454576 /* View.swift in Sources */,
 				C5744D7322A17F5F00454576 /* RandomIntegerGenerator.swift in Sources */,
 				C5744D6122A17E3800454576 /* AppDelegate.swift in Sources */,
 			);

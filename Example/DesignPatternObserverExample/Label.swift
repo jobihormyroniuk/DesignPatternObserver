@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RIGOLabel: UILabel, RandomIntegerGeneratorObserver {
+class Label: UILabel, RandomIntegerGeneratorObserver {
   
   // MARK: RandomIntegerGeneratorObserver
   

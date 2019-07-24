@@ -9,8 +9,6 @@
 import Foundation
 
 protocol RandomIntegerGenerator: class {
-  func start()
-  func stop()
   func addRandomIntegerGeneratorObserver(_ observer: RandomIntegerGeneratorObserver)
   func removeRandomIntegerGeneratorObserver(_ observer: RandomIntegerGeneratorObserver)
 }
